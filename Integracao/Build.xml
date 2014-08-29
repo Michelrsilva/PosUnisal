@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     29/08/2014 14:41:37                                                        
+
+     Integracao    
+     Projeto Unisal
+                   
+     ribeiro                                                                
+     ====================================================================== -->
+<project name="Integracao" default="compilar">
+    <description>
+            Projeto Unisal
+    </description>
+
+       	<target name="compilar">
+    	    <delete dir="bin" />
+    	    <mkdir dir="bin" />
+
+    	    <javac srcdir="src/main/java" destdir="bin" >
+    	      <classpath>
+    	        <fileset dir="lib">
+    	          <include name="*.jar" />
+    	        </fileset>
+    	      </classpath>
+    	    </javac>
+    	
+    </target>
+
+</project>
