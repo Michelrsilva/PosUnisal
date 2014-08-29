@@ -7,7 +7,7 @@ public class Calculadora {
 	private int operador2;
 
 	public Calculadora(int operador1, int operador2) {
-		this.xoperador1 = operador1;
+		this.operador1 = operador1;
 		this.operador2 = operador2;
 	}
 
